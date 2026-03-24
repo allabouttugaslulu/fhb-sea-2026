@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
     let top = el.getBoundingClientRect().top;
     let windowHeight = window.innerHeight;
 
-    if(top < windowHeight - 100){
+    if(top < windowHeight - 80){
       el.classList.add('active');
     }
   });
