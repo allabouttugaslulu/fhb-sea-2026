@@ -42,6 +42,7 @@ nav.scrolled {
   transform: translateY(-50%);
   text-align: center;
   color: white;
+  padding: 0 15px;
 }
 
 .content h1 {
@@ -60,7 +61,7 @@ nav.scrolled {
   margin-bottom: 15px;
 }
 
-/* BUTTON */
+/* BUTTON HERO */
 .buttons a {
   padding: 10px 22px;
   margin: 6px;
@@ -77,7 +78,7 @@ nav.scrolled {
   background: #c8e6c9;
 }
 
-/* SECTION TONE (NO BORDER PEMISAH) */
+/* SECTION TONE */
 .tentang {
   padding: 50px 20px;
   text-align: center;
@@ -120,7 +121,7 @@ nav.scrolled {
   font-size: 35px;
 }
 
-/* BUTTON CARD */
+/* BUTTON DI CARD */
 .card a {
   display: block;
   margin: 5px 0;
@@ -130,8 +131,14 @@ nav.scrolled {
   border-radius: 6px;
   text-decoration: none;
   font-size: 13px;
+  transition: 0.3s;
 }
 
+.card a:hover {
+  background: #66bb6a;
+}
+
+/* PENTING: tombol terakhir (pendaftaran) */
 .card a:last-child {
   background: #2e7d32;
   font-weight: bold;
@@ -142,6 +149,27 @@ nav.scrolled {
   background: #e8f5e9;
   padding: 50px 20px;
   text-align: center;
+}
+
+/* BUTTON GLOBAL (CP & KEMBALI) */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #2e7d32;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1b5e20;
+}
+
+/* KHUSUS HALAMAN CARA DAFTAR */
+.tentang p {
+  line-height: 1.6;
 }
 
 /* ANIMASI */
