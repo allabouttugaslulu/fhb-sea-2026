@@ -226,4 +226,16 @@ nav.scrolled {
   .tentang, .kategori {
     padding: 40px 15px;
   }
+
+  /* FIX GARIS PUTIH ANTARA HEADER & SECTION */
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #e8f5e9;
+  z-index: 2;
+  }
 }
