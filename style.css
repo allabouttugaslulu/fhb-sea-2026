@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -6,17 +10,19 @@ body {
 
 /* NAVBAR */
 nav {
-  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  padding: 15px 40px;
   background: #2e7d32;
   color: white;
-  font-weight: bold;
+  z-index: 1000;
 }
 
 /* HERO */
 .header {
-  position: relative;
   height: 100vh;
   background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
+  position: relative;
 }
 
 .overlay {
@@ -28,35 +34,29 @@ nav {
 
 .content {
   position: relative;
-  color: white;
-  text-align: center;
   top: 50%;
   transform: translateY(-50%);
-  padding: 20px;
-}
-
-.content h1 {
-  font-size: 48px;
+  text-align: center;
+  color: white;
 }
 
 .buttons a {
-  display: inline-block;
-  margin: 10px;
   padding: 12px 25px;
+  margin: 10px;
   background: white;
   color: #2e7d32;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: #c8e6c9;
 }
 
 /* SECTION */
-.tentang {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.kategori {
+.tentang, .kategori, .cta {
   padding: 80px 20px;
   text-align: center;
 }
@@ -79,12 +79,11 @@ nav {
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.03);
 }
 
 .icon {
   font-size: 40px;
-  margin-bottom: 10px;
 }
 
 .card a {
@@ -97,7 +96,27 @@ nav {
   text-decoration: none;
 }
 
-/* ANIMATION */
+.card a:hover {
+  background: #4caf50;
+}
+
+/* CTA */
+.cta {
+  background: #e8f5e9;
+}
+
+/* BUTTON GLOBAL */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2e7d32;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* ANIMASI */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -111,10 +130,6 @@ nav {
 
 /* RESPONSIVE */
 @media(max-width:768px){
-  .content h1 {
-    font-size: 30px;
-  }
-
   .card {
     width: 90%;
   }
