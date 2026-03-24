@@ -16,11 +16,16 @@ nav {
   background: #2e7d32;
   color: white;
   z-index: 1000;
+  transition: 0.3s;
 }
 
-/* HERO */
+nav.scrolled {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
 .header {
-  height: 100vh;
+  height: 85vh;
   background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
   position: relative;
 }
@@ -40,6 +45,16 @@ nav {
   color: white;
 }
 
+.content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+}
+
+/* BUTTONS */
 .buttons a {
   padding: 12px 25px;
   margin: 10px;
@@ -55,10 +70,19 @@ nav {
   background: #c8e6c9;
 }
 
-/* SECTION */
-.tentang, .kategori, .cta {
+/* SECTIONS */
+.tentang {
   padding: 80px 20px;
   text-align: center;
+  background: #e8f5e9;
+  border-top: 5px solid #c8e6c9;
+}
+
+.kategori {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f4fbf6;
+  border-top: 5px solid #a5d6a7;
 }
 
 /* CARD */
@@ -103,6 +127,8 @@ nav {
 /* CTA */
 .cta {
   background: #e8f5e9;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 /* BUTTON GLOBAL */
@@ -132,5 +158,9 @@ nav {
 @media(max-width:768px){
   .card {
     width: 90%;
+  }
+
+  .content h1 {
+    font-size: 28px;
   }
 }
