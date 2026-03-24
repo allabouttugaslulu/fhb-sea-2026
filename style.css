@@ -1,0 +1,37 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+nav {
+  background: green;
+  color: white;
+  padding: 15px;
+}
+
+.header {
+  text-align: center;
+  padding: 80px;
+  background: lightgreen;
+}
+
+.buttons a {
+  margin: 10px;
+  padding: 10px;
+  background: green;
+  color: white;
+  text-decoration: none;
+}
+
+.tentang {
+  padding: 50px;
+}
+
+.kategori {
+  padding: 50px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
