@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background: #f4fbf6;
 }
 
 /* NAVBAR */
@@ -27,6 +28,7 @@ nav.scrolled {
   height: 70vh;
   background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover;
   position: relative;
+  margin-bottom: -5px; /* FIX garis putih */
 }
 
 .overlay {
@@ -78,7 +80,7 @@ nav.scrolled {
   background: #c8e6c9;
 }
 
-/* SECTION TONE */
+/* SECTION */
 .tentang {
   padding: 50px 20px;
   text-align: center;
@@ -121,7 +123,7 @@ nav.scrolled {
   font-size: 35px;
 }
 
-/* BUTTON DI CARD */
+/* BUTTON CARD */
 .card a {
   display: block;
   margin: 5px 0;
@@ -138,7 +140,6 @@ nav.scrolled {
   background: #66bb6a;
 }
 
-/* PENTING: tombol terakhir (pendaftaran) */
 .card a:last-child {
   background: #2e7d32;
   font-weight: bold;
@@ -151,7 +152,7 @@ nav.scrolled {
   text-align: center;
 }
 
-/* BUTTON GLOBAL (CP & KEMBALI) */
+/* BUTTON GLOBAL */
 .btn {
   display: inline-block;
   padding: 10px 18px;
@@ -167,9 +168,33 @@ nav.scrolled {
   background: #1b5e20;
 }
 
-/* KHUSUS HALAMAN CARA DAFTAR */
-.tentang p {
-  line-height: 1.6;
+/* ===== HALAMAN CARA DAFTAR ===== */
+.halaman-cara {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container-konten {
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+}
+
+.container-konten h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.container-konten h3 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.container-konten p {
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 /* ANIMASI */
