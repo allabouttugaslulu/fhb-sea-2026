@@ -1,42 +1,94 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>FHB SEA 2026</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FHB SEA 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
   <h2>FHB: SEA 2026</h2>
 </nav>
 
+<!-- HERO -->
 <section class="header">
-  <h1>FHB: SEA 2026</h1>
-  <p>Bersama kita suarakan aksi untuk bumi 🌱</p>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>FHB: SEA 2026</h1>
+    <p>Bersama kita suarakan aksi untuk bumi melalui karya kreatif 🌱</p>
 
-  <div class="buttons">
-    <a href="#tentang">Tentang</a>
-    <a href="#kategori">Lomba</a>
-  </div>
-</section>
-
-<section id="tentang" class="tentang">
-  <h2>Tentang</h2>
-  <p>Isi deskripsi FHB nanti di sini</p>
-</section>
-
-<section id="kategori" class="kategori">
-  <h2>Pilih Kategori Lomba</h2>
-
-  <div class="card-container">
-    <div class="card">
-      <h3>Poster</h3>
-      <a href="#">Daftar</a>
+    <div class="buttons">
+      <a href="#tentang">Tentang</a>
+      <a href="#kategori">Kategori Lomba</a>
     </div>
   </div>
 </section>
+
+<!-- TENTANG -->
+<section id="tentang" class="tentang reveal">
+  <h2>Tentang FHB: SEA 2026</h2>
+  <p>
+    Kegiatan perlombaan merupakan kegiatan kompetisi daring sebagai bagian dari Festival Hari Bumi.
+    Bertujuan mendorong mahasiswa menyuarakan isu lingkungan melalui karya kreatif yang edukatif dan inspiratif.
+  </p>
+</section>
+
+<!-- KATEGORI -->
+<section id="kategori" class="kategori">
+  <h2 class="reveal">Pilih Kategori Lomba</h2>
+
+  <div class="card-container">
+
+    <!-- CARD -->
+    <div class="card reveal">
+      <div class="icon">🎨</div>
+      <h3>Poster Digital</h3>
+      <a href="#">Handbook</a>
+      <a href="cara.html">Cara Mendaftar</a>
+      <a href="#">Pendaftaran</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">📷</div>
+      <h3>Fotografi</h3>
+      <a href="#">Handbook</a>
+      <a href="cara.html">Cara Mendaftar</a>
+      <a href="#">Pendaftaran</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">📝</div>
+      <h3>Esai</h3>
+      <a href="#">Handbook</a>
+      <a href="cara.html">Cara Mendaftar</a>
+      <a href="#">Pendaftaran</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">🎥</div>
+      <h3>Video Campaign</h3>
+      <a href="#">Handbook</a>
+      <a href="cara.html">Cara Mendaftar</a>
+      <a href="#">Pendaftaran</a>
+    </div>
+
+    <div class="card reveal">
+      <div class="icon">📱</div>
+      <h3>Kuis Instagram</h3>
+      <a href="cara.html">Cara Berpartisipasi</a>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
